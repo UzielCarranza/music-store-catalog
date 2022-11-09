@@ -1,0 +1,27 @@
+USE music_store_catalog;
+
+INSERT INTO label(label_id, name, website)
+VALUES (1, 'EMI', 'http://www.emi.com'),
+       (2, 'Sony', 'http://www.sony.com'),
+       (3, 'Warner', 'http://www.warner.com'),
+       (4, 'Universal', 'http://www.universal.com'),
+       (5, 'BMG', 'http://www.bmg.com');
+
+INSERT INTO artist(artist_id, name, instagram, twitter)
+VALUES (1, 'some', 'some@instagram', 'some@twitter'),
+       (2, 'test', 'test@instagram', 'test@twitter');
+
+INSERT INTO album(album_id, title, artist_id, release_date, label_id, list_price)
+VALUES(1,'album1', 1, '2019-01-01', 1, 10.99),
+       (2, 'album2', 2, '2019-01-01', 2, 10.99),
+       (3, 'album3', 1, '2019-01-01', 3, 10.99),
+       (4, 'album4', 2, '2019-01-01', 4, 10.99),
+       (5, 'album5', 1, '2019-01-01', 5, 10.99);
+
+INSERT INTO track(track_id, album_id, title, run_time)
+VALUES(1, 1, 'track1', 100),
+       (2, 2, 'track2', 100),
+       (3, 3, 'track3', 100),
+       (4, 4, 'track4', 100),
+       (5, 5, 'track5', 100),
+       (6, 1, 'track6', 100);
