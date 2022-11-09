@@ -11,7 +11,7 @@ import javax.validation.Valid;
 import java.util.List;
 
 @RestController
-@RequestMapping(value = "album")
+@RequestMapping(value = "/album")
 public class AlbumController {
 
     @Autowired

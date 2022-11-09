@@ -11,7 +11,7 @@ import javax.validation.Valid;
 import java.util.List;
 
 @RestController
-@RequestMapping(value = "artist")
+@RequestMapping(value = "/artist")
 public class ArtistController {
 
     @Autowired

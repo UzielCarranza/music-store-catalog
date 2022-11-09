@@ -11,7 +11,7 @@ import javax.validation.Valid;
 import java.util.List;
 
 @RestController
-@RequestMapping(value = "track")
+@RequestMapping(value = "/track")
 public class TrackController {
     @Autowired
     private TrackService trackService;
