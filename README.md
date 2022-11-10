@@ -6,3 +6,13 @@ is a microservice with a REST API that provides CRUD functionality for a databas
 1.- Microservice is containerized and deployed on Heroku
 2.- Microservice and database are deployed to Heroku
 3.- Microservice uses Mockito to test REST API
+
+
+# Live Deployment
+
+(Check it out with Swagger) 
+
+ https://young-wave-15724.herokuapp.com/swagger-ui/index.html?configUrl=/v3/api-docs/swagger-config#/
+ 
+ 
+ (Raw Deplyment)   https://young-wave-15724.herokuapp.com/album/all
