@@ -2,6 +2,6 @@
 
 #KEY FEATURES
 
-#Microservice is containerized and deployed on Heroku
-#Microservice and database are deployed to Heroku
-#Microservice uses Mockito to test REST API
+# Microservice is containerized and deployed on Heroku
+# Microservice and database are deployed to Heroku
+# Microservice uses Mockito to test REST API
