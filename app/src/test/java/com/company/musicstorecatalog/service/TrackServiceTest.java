@@ -1,5 +1,6 @@
 package com.company.musicstorecatalog.service;
 
+import com.company.musicstorecatalog.model.Label;
 import com.company.musicstorecatalog.model.Track;
 import com.company.musicstorecatalog.repository.TrackRepository;
 import org.junit.Before;
@@ -62,6 +63,19 @@ public class TrackServiceTest {
 //        ACT
         // get it back out of the database
         Track trackPersistentOnDatabase = service.getTrackById(trackSetUp.getId());
+
+//        ASSERT
+        // confirm that the thing I got back from the database is the thing I wrote the database
+        assertEquals(trackSetUp, trackPersistentOnDatabase);
+
+    }
+
+    @Test
+    public void shouldReturnNewTrackOnPostRequest() throws Exception {
+
+//        ACT
+        // get it back out of the database
+        Track trackPersistentOnDatabase = service.createTrack(trackSetUp);
 
 //        ASSERT
         // confirm that the thing I got back from the database is the thing I wrote the database

@@ -71,6 +71,18 @@ public class LabelServiceTest {
         assertEquals(labelSetUp, labelPersistentOnDatabase);
 
     }
+    @Test
+    public void shouldReturnNewLabelOnPostRequest() throws Exception {
+
+//        ACT
+        // get it back out of the database
+        Label labelPersistentOnDatabase = service.createLabel(labelSetUp);
+
+//        ASSERT
+        // confirm that the thing I got back from the database is the thing I wrote the database
+        assertEquals(labelSetUp, labelPersistentOnDatabase);
+
+    }
 
     @Test(expected = IllegalArgumentException.class)
     public void shouldThrowExceptionWhenLabelIsNull() throws Exception {

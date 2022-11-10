@@ -76,6 +76,18 @@ public class AlbumServiceTest {
         assertEquals(albumSetUp, albumPersistentOnDatabase);
 
     }
+    @Test
+    public void shouldReturnNewAlbumOnPostRequest() throws Exception {
+
+//        ACT
+        // get it back out of the database
+        Album albumPersistentOnDatabase = service.createAlbum(albumSetUp);
+
+//        ASSERT
+        // confirm that the thing I got back from the database is the thing I wrote the database
+        assertEquals(albumSetUp, albumPersistentOnDatabase);
+
+    }
     @Test(expected = IllegalArgumentException.class)
     public void shouldThrowExceptionWhenAlbumIsNull() throws Exception {
 

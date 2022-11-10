@@ -1,6 +1,7 @@
 package com.company.musicstorecatalog.service;
 
 
+import com.company.musicstorecatalog.model.Album;
 import com.company.musicstorecatalog.model.Artist;
 import com.company.musicstorecatalog.repository.ArtistRepository;
 import org.junit.Before;
@@ -64,6 +65,19 @@ public class ArtistServiceTest {
 //        ACT
         // get it back out of the database
         Artist artistPersistentOnDatabase = service.getArtistById(artistSetUp.getId());
+
+//        ASSERT
+        // confirm that the thing I got back from the database is the thing I wrote the database
+        assertEquals(artistSetUp, artistPersistentOnDatabase);
+
+    }
+
+    @Test
+    public void shouldReturnNewArtistOnPostRequest() throws Exception {
+
+//        ACT
+        // get it back out of the database
+        Artist artistPersistentOnDatabase = service.createArtist(artistSetUp);
 
 //        ASSERT
         // confirm that the thing I got back from the database is the thing I wrote the database
