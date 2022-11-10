@@ -37,7 +37,7 @@ public class AlbumService {
 //        code gather from SMU Challenge 5
         if (album == null) throw new IllegalArgumentException("No Album is passed! Album object is null!");
 
-        return albumRepository.save(builderAlbum(album));
+        return albumRepository.save(album);
     }
 
 
