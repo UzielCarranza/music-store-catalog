@@ -1,4 +1,4 @@
-USE music_store_catalog;
+USE nh4zdgy1b4pcjo7o;
 
 INSERT INTO label(label_id, name, website)
 VALUES (1, 'EMI', 'http://www.emi.com'),
