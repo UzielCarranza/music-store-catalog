@@ -10,9 +10,8 @@ is a microservice with a REST API that provides CRUD functionality for a databas
 
 # Live Deployment
 
-(Check it out with Swagger) 
+(Check it out with Swagger)
 
- https://young-wave-15724.herokuapp.com/swagger-ui/index.html?configUrl=/v3/api-docs/swagger-config#/
+https://pacific-depths-39208.herokuapp.com/swagger-ui/index.html?configUrl=/v3/api-docs/swagger-config#/
  
- 
- (Raw Deplyment)   https://young-wave-15724.herokuapp.com/album/all
+ (Raw Deplyment)   https://pacific-depths-39208.herokuapp.com/album/all
